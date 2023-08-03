@@ -4,7 +4,7 @@ using UnityEngine;
 namespace SerrateDevs.SliceItAllClone {
     public class GameStateController : MonoBehaviour {
 
-        public static GameStateController Instance;
+        public static GameStateController Instance { get; private set; }
 
         public static Action<GameStates> OnGameStateChange;
 

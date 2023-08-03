@@ -8,6 +8,7 @@ namespace SerrateDevs.SliceItAllClone {
         [SerializeField] private GameObject _winMessagePanel;
         [SerializeField] private GameObject _loseMessagePanel;
         [SerializeField] private GameObject _inGameRestartButton;
+        [SerializeField] private GameObject _finalScorePanel;
 
         private void OnEnable() {
             GameStateController.OnGameStateChange += ChangeUIVisibility;
@@ -24,24 +25,28 @@ namespace SerrateDevs.SliceItAllClone {
                     _winMessagePanel.SetActive(false);
                     _loseMessagePanel.SetActive(false);
                     _inGameRestartButton.SetActive(false);
+                    _finalScorePanel.SetActive(false);
                     break;
                 case GameStates.InGame:
                     _levelMessagePanel.SetActive(false);
                     _winMessagePanel.SetActive(false);
                     _loseMessagePanel.SetActive(false);
                     _inGameRestartButton.SetActive(true);
+                    _finalScorePanel.SetActive(false);
                     break;
                 case GameStates.Win:
                     _levelMessagePanel.SetActive(false);
                     _winMessagePanel.SetActive(true);
                     _loseMessagePanel.SetActive(false);
                     _inGameRestartButton.SetActive(false);
+                    _finalScorePanel.SetActive(true);
                     break;
                 case GameStates.Lose:
                     _levelMessagePanel.SetActive(false);
                     _winMessagePanel.SetActive(false);
                     _loseMessagePanel.SetActive(true);
                     _inGameRestartButton.SetActive(false);
+                    _finalScorePanel.SetActive(true);
                     break;
             }
         }
