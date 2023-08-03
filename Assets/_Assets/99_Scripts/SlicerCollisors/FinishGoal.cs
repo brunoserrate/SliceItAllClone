@@ -20,8 +20,6 @@ namespace SerrateDevs.SliceItAllClone {
         private void PlayerWin(PlayerController playerController) {
             playerController.Stuck();
 
-            Debug.Log("Player Win");
-
             OnPlayerWin?.Invoke(_scoreMultiplier);
         }
     }

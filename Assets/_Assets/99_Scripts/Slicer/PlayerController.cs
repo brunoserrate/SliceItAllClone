@@ -18,12 +18,20 @@ namespace SerrateDevs.SliceItAllClone {
 
         private bool _canStuck = true;
 
+        // TODO: Refactor to a new component: input reader
+        public static Action OnTap;
+
         private void Start() {
             rb.isKinematic = true;
         }
 
+        // TODO: Refactor to a new component: input reader
         private void Update() {
             if(Input.GetMouseButtonDown(0)) {
+                OnTap?.Invoke();
+
+                if(GameStateController.Instance.CurrentGameState != GameStates.InGame) return;
+
                 Jump();
                 Spin();
             }

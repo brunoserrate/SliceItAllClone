@@ -1,9 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 namespace SerrateDevs.SliceItAllClone {
     public class DeathZone : MonoBehaviour, ISlicerCollisor {
+
+        public static Action OnPlayerLose;
         public void OnSlicerHandleHit(PlayerController playerController) {
             PlayerLose(playerController);
         }
@@ -13,9 +14,8 @@ namespace SerrateDevs.SliceItAllClone {
         }
 
         private void PlayerLose(PlayerController playerController) {
-            // TODO: Trigger Event to Lose
-            Debug.Log("Player Lose");
             playerController.Stuck();
+            OnPlayerLose?.Invoke();
         }
     }
 }
