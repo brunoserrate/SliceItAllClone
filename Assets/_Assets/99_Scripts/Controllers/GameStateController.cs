@@ -6,7 +6,7 @@ namespace SerrateDevs.SliceItAllClone {
 
         public static GameStateController Instance;
 
-        public static Action OnGameStateChange;
+        public static Action<GameStates> OnGameStateChange;
 
         private GameStates _currentGameState;
         public GameStates CurrentGameState => _currentGameState;
@@ -60,7 +60,7 @@ namespace SerrateDevs.SliceItAllClone {
             if(_currentGameState == newGameState) return;
 
             _currentGameState = newGameState;
-            OnGameStateChange?.Invoke();
+            OnGameStateChange?.Invoke(_currentGameState);
         }
 
 
