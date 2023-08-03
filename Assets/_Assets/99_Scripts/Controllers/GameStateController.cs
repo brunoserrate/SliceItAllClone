@@ -26,14 +26,14 @@ namespace SerrateDevs.SliceItAllClone {
             PlayerController.OnTap += OnPlayerTap;
             DeathZone.OnPlayerLose += OnPlayerLose;
             FinishGoal.OnPlayerWin += OnPlayerWin;
+            LevelController.OnLevelLoaded += ResetState;
         }
 
         private void OnDisable() {
             PlayerController.OnTap -= OnPlayerTap;
             DeathZone.OnPlayerLose -= OnPlayerLose;
             FinishGoal.OnPlayerWin -= OnPlayerWin;
-            // OnNextLevel
-            // OnRestart
+            LevelController.OnLevelLoaded -= ResetState;
         }
         #endregion
 
@@ -51,7 +51,7 @@ namespace SerrateDevs.SliceItAllClone {
             ChangeGameState(GameStates.Win);
         }
 
-        private void ResetState() {
+        private void ResetState(int levelIndex) {
             ChangeGameState(GameStates.Start);
         }
         #endregion
