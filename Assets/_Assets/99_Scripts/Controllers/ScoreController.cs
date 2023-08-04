@@ -4,6 +4,7 @@ using UnityEngine;
 namespace SerrateDevs.SliceItAllClone {
     public class ScoreController : MonoBehaviour {
         public static Action<int> OnScoreChange;
+        public static Action<int> OnFinalCurrentScoreChange;
 
         private int _totalScore;
         private int _currentScore;
@@ -29,6 +30,8 @@ namespace SerrateDevs.SliceItAllClone {
         private void OnPlayerWin(float scoreMultiplier) {
             _totalScore += (int)(scoreMultiplier * _currentScore);
             OnScoreChange?.Invoke(_totalScore);
+
+            OnFinalCurrentScoreChange?.Invoke(_currentScore);
         }
         #endregion
     }

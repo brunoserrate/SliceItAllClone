@@ -9,7 +9,6 @@ namespace SerrateDevs.SliceItAllClone {
         private StringBuilder _scoreStringBuilder = new StringBuilder();
 
         private void Awake() {
-            _scoreStringBuilder.Append("$ ");
             _scoreStringBuilder.Append("0");
             _scoreText.text = _scoreStringBuilder.ToString();
         }
@@ -27,13 +26,11 @@ namespace SerrateDevs.SliceItAllClone {
         #region Events
         private void OnScoreChange(int score) {
             _scoreStringBuilder.Clear();
-            _scoreStringBuilder.Append("$ ");
             _scoreStringBuilder.Append(score.ToString());
 
             _scoreText.text =  _scoreStringBuilder.ToString();
         }
         #endregion
-
 
     }
 }
