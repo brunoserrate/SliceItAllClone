@@ -7,12 +7,22 @@ namespace SerrateDevs.SliceItAllClone {
     {
         public static event Action<float> OnPlayerWin;
 
-        [SerializeField] private float _scoreMultiplier = 1f;
+        [Header("Components")]
+        [Tooltip("The score text to show the score multiplier")]
         [SerializeField] private TMPro.TextMeshProUGUI _scoreText;
 
-        [Space(10)]
+        [Header("Settings")]
+        [Tooltip("The score multiplier when the player wins")]
+        [SerializeField] private float _scoreMultiplier = 1f;
 
+        [Space(2)]
+
+        [Tooltip("The time to wait to the player win after it hits the finish goal")]
         [SerializeField] private float _delayToWin = 0.5f;
+
+        // <summary>
+        // The time to wait to the player win after it hits the finish goal. The variable prevents to put more work on the garbage collector
+        // </summary>
         private WaitForSeconds _delayToWinWaitForSeconds;
 
         private void Start() {
@@ -33,7 +43,7 @@ namespace SerrateDevs.SliceItAllClone {
         }
 
         private IEnumerator PlayerWinCoroutine(PlayerController playerController) {
-            playerController.Stuck();
+            playerController.Stuck(true);
 
             yield return _delayToWinWaitForSeconds;
 

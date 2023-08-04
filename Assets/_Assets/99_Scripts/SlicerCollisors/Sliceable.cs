@@ -6,6 +6,7 @@ namespace SerrateDevs.SliceItAllClone {
         public static event System.Action<int> OnSliceableDestroyed;
 
         [Header("Sliceable Configuration")]
+        [Tooltip("The score value when the player destroys this sliceable")]
         [Min(1)]
         [SerializeField] private int _scoreValue = 1;
 
@@ -16,7 +17,6 @@ namespace SerrateDevs.SliceItAllClone {
 
         [Space(5)]
         [SerializeField] private TMPro.TextMeshProUGUI _scoreText;
-
 
         private bool _isSliced = false;
 
@@ -39,6 +39,10 @@ namespace SerrateDevs.SliceItAllClone {
             OnSliceableDestroyed?.Invoke(_scoreValue);
         }
 
+        // <summary>
+        // Slices the sliceable and apply the explosion force to the parts
+        // The first part of the sliceable will be pushed forward and the second part will be pushed backwards (that's why the z axis is multiplied by -2)
+        // </summary>
         private void Slice(){
             for (int i = 0; i < _rigidbodiesParts.Length; i++) {
                 _rigidbodiesParts[i].isKinematic = false;

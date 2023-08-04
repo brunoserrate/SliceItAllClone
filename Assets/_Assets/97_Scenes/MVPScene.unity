@@ -5801,7 +5801,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7aa05a59c356d074d8ce27cddfe3cd98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _levelMessagePanel: {fileID: 2129576240}
+  _levelMessagePanel: {fileID: 2129576242}
   _winMessagePanel: {fileID: 2037725460}
   _loseMessagePanel: {fileID: 1943348400}
   _inGameRestartButton: {fileID: 393075279}

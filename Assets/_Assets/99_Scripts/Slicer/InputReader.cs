@@ -6,7 +6,6 @@ namespace SerrateDevs.SliceItAllClone {
 
         public static Action OnTap;
         private void Update() {
-
             #if UNITY_EDITOR
             if(Input.GetMouseButtonDown(0)) {
                 OnTap?.Invoke();

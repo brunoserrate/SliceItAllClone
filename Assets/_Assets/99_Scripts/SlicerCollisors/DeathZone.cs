@@ -7,6 +7,8 @@ namespace SerrateDevs.SliceItAllClone {
 
         public static Action OnPlayerLose;
 
+        [Header("Settings")]
+        [Tooltip("The time to wait to the player lose after it hits the death zone")]
         [SerializeField] private float _delayToLose = 0.5f;
         private WaitForSeconds _delayToLoseWaitForSeconds;
 
