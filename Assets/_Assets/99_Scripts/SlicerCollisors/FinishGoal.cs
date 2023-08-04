@@ -7,6 +7,13 @@ namespace SerrateDevs.SliceItAllClone {
         public static event Action<float> OnPlayerWin;
 
         [SerializeField] private float _scoreMultiplier = 1f;
+        [SerializeField] private TMPro.TextMeshProUGUI _scoreText;
+
+        private void Start() {
+            if(_scoreText != null)
+                _scoreText.text = $"X{_scoreMultiplier.ToString()}";
+        }
+
         public void OnSlicerHandleHit(PlayerController playerController) {
             playerController.JumpBack();
         }

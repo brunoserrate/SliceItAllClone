@@ -28,10 +28,12 @@ namespace SerrateDevs.SliceItAllClone {
         }
 
         private void OnPlayerWin(float scoreMultiplier) {
-            _totalScore += (int)(scoreMultiplier * _currentScore);
+            int finalScore = (int)(_currentScore * scoreMultiplier);
+
+            _totalScore += finalScore;
             OnScoreChange?.Invoke(_totalScore);
 
-            OnFinalCurrentScoreChange?.Invoke(_currentScore);
+            OnFinalCurrentScoreChange?.Invoke(finalScore);
         }
         #endregion
     }

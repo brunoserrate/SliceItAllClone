@@ -14,6 +14,7 @@ namespace SerrateDevs {
         }
 
         private void Update() {
+            if(!gameObject.activeInHierarchy) return;
             transform.Translate(_normalizedDirection * (_speed * Time.deltaTime));
         }
     }

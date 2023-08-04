@@ -14,8 +14,16 @@ namespace SerrateDevs.SliceItAllClone {
         [SerializeField] private ParticleSystem _particleSystem;
         [SerializeField] private SliceableDestroyedEffectConfiguration _sliceableDestroyedEffectConfiguration;
 
+        [Space(5)]
+        [SerializeField] private TMPro.TextMeshProUGUI _scoreText;
+
 
         private bool _isSliced = false;
+
+        private void Start() {
+            _scoreText.text = $"+{_scoreValue.ToString()}";
+            _scoreText.gameObject.SetActive(false);
+        }
 
         public void OnSlicerHandleHit(PlayerController playerController) {
             if(_isSliced) return;
@@ -45,15 +53,10 @@ namespace SerrateDevs.SliceItAllClone {
                     ForceMode.Impulse
                 );
             }
-            foreach (var rbPart in _rigidbodiesParts) {
-                rbPart.isKinematic = false;
-                rbPart.AddForce(
-                    _sliceableDestroyedEffectConfiguration.explosionForce * _sliceableDestroyedEffectConfiguration.explosionDirection,
-                    ForceMode.Impulse
-                );
 
-                _particleSystem.Play();
-            }
+            _scoreText.gameObject.SetActive(true);
+
+            _particleSystem.Play();
         }
     }
 }
