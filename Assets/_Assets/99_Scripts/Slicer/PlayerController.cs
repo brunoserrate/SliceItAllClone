@@ -16,16 +16,20 @@ namespace SerrateDevs.SliceItAllClone {
         [SerializeField] private Vector3 _backRotationForce;
 
         private bool _canStuck = true;
+        private bool _stopReadingInput = false;
 
         // TODO: Refactor to a new component: input reader
         public static Action OnTap;
 
         private void Start() {
             rb.isKinematic = true;
+            _stopReadingInput = false;
         }
 
         // TODO: Refactor to a new component: input reader
         private void Update() {
+            if(_stopReadingInput) return;
+
             if(Input.GetMouseButtonDown(0)) {
                 OnTap?.Invoke();
 
@@ -72,10 +76,13 @@ namespace SerrateDevs.SliceItAllClone {
             StartCoroutine(TimerToStuck());
         }
 
-        public void Stuck() {
+        public void Stuck(bool stopReadingInput = false) {
             if(!_canStuck) return;
             rb.isKinematic = true;
             _canStuck = false;
+
+            if(stopReadingInput)
+                _stopReadingInput = true;
         }
 
         private IEnumerator TimerToStuck() {

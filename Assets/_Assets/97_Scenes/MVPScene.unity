@@ -216,6 +216,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79841f024724c0743b083d9b72ca2ecc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _delayToLose: 0.5
 --- !u!64 &48708240
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -317,6 +318,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79841f024724c0743b083d9b72ca2ecc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _delayToLose: 0.5
 --- !u!1 &244823995
 GameObject:
   m_ObjectHideFlags: 0
@@ -1782,6 +1784,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79841f024724c0743b083d9b72ca2ecc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _delayToLose: 0.5
 --- !u!1001 &639415825
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1968,7 +1971,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _levelPrefabs:
+  - {fileID: 6361830582858177085, guid: e0cfd425736607e419e687769ef2aa63, type: 3}
   - {fileID: 6361830582858177085, guid: 022533375cd4aaf4c9871c4d9d2b6de0, type: 3}
+  - {fileID: 6361830582858177085, guid: 4f01359417b6a854c811584b90222f24, type: 3}
 --- !u!4 &652065492
 Transform:
   m_ObjectHideFlags: 0
@@ -4926,6 +4931,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79841f024724c0743b083d9b72ca2ecc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _delayToLose: 0.5
 --- !u!1001 &1256864441
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5574,6 +5580,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79841f024724c0743b083d9b72ca2ecc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _delayToLose: 0.5
 --- !u!1 &1446716918
 GameObject:
   m_ObjectHideFlags: 0
@@ -5639,11 +5646,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 108507113624698413, guid: eebb56c82efbd8d4bb0eb6bd925a0e9d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 61.355263
+      value: 61.064
       objectReference: {fileID: 0}
     - target: {fileID: 108507113624698413, guid: eebb56c82efbd8d4bb0eb6bd925a0e9d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -116.03767
+      value: -117.885
       objectReference: {fileID: 0}
     - target: {fileID: 108507113624698413, guid: eebb56c82efbd8d4bb0eb6bd925a0e9d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6371,6 +6378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79841f024724c0743b083d9b72ca2ecc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _delayToLose: 0.5
 --- !u!1 &1611239117
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,24 +1,35 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 namespace SerrateDevs.SliceItAllClone {
     public class DeathZone : MonoBehaviour, ISlicerCollisor {
 
         public static Action OnPlayerLose;
+
+        [SerializeField] private float _delayToLose = 0.5f;
+        private WaitForSeconds _delayToLoseWaitForSeconds;
+
+        private void Start() {
+            _delayToLoseWaitForSeconds = new WaitForSeconds(_delayToLose);
+        }
         public void OnSlicerHandleHit(PlayerController playerController) {
             if(GameStateController.Instance.CurrentGameState != GameStates.InGame) return;
 
-            PlayerLose(playerController);
+            StartCoroutine(PlayerLoseCoroutine(playerController));
         }
 
         public void OnSlicerSharpEdgeHit(PlayerController playerController) {
             if(GameStateController.Instance.CurrentGameState != GameStates.InGame) return;
 
-            PlayerLose(playerController);
+            StartCoroutine(PlayerLoseCoroutine(playerController));
         }
 
-        private void PlayerLose(PlayerController playerController) {
-            playerController.Stuck();
+        private IEnumerator PlayerLoseCoroutine(PlayerController playerController) {
+            playerController.Stuck(true);
+
+            yield return _delayToLoseWaitForSeconds;
+
             OnPlayerLose?.Invoke();
         }
     }
