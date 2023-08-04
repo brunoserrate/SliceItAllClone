@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a84c087de342d341a763afe32fcc72a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _scoreValue: 1
+  _scoreValue: 3
   _rigidbodiesParts:
   - {fileID: 8823858118257603278}
   - {fileID: 5912685415267761794}

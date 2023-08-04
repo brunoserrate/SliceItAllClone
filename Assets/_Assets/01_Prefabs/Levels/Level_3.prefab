@@ -409,6 +409,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7796036458608504407}
     m_Modifications:
+    - target: {fileID: 879950176815563552, guid: 99c1b9e05b20f894cb3546e306ac459a, type: 3}
+      propertyPath: _scoreValue
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1643046098951957852, guid: 99c1b9e05b20f894cb3546e306ac459a, type: 3}
       propertyPath: m_Name
       value: Block_05
@@ -487,6 +491,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1176142975666659757}
     m_Modifications:
+    - target: {fileID: 879950176815563552, guid: 99c1b9e05b20f894cb3546e306ac459a, type: 3}
+      propertyPath: _scoreValue
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1643046098951957852, guid: 99c1b9e05b20f894cb3546e306ac459a, type: 3}
       propertyPath: m_Name
       value: Block_02
@@ -565,6 +573,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3013513422768517056}
     m_Modifications:
+    - target: {fileID: 879950176815563552, guid: 99c1b9e05b20f894cb3546e306ac459a, type: 3}
+      propertyPath: _scoreValue
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1643046098951957852, guid: 99c1b9e05b20f894cb3546e306ac459a, type: 3}
       propertyPath: m_Name
       value: Block_06
@@ -705,6 +717,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1176142975666659757}
     m_Modifications:
+    - target: {fileID: 879950176815563552, guid: 99c1b9e05b20f894cb3546e306ac459a, type: 3}
+      propertyPath: _scoreValue
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1643046098951957852, guid: 99c1b9e05b20f894cb3546e306ac459a, type: 3}
       propertyPath: m_Name
       value: Block_05
@@ -845,6 +861,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1176142975666659757}
     m_Modifications:
+    - target: {fileID: 879950176815563552, guid: 99c1b9e05b20f894cb3546e306ac459a, type: 3}
+      propertyPath: _scoreValue
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1643046098951957852, guid: 99c1b9e05b20f894cb3546e306ac459a, type: 3}
       propertyPath: m_Name
       value: Block_06
@@ -923,6 +943,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1595439380380651308}
     m_Modifications:
+    - target: {fileID: 879950176815563552, guid: 99c1b9e05b20f894cb3546e306ac459a, type: 3}
+      propertyPath: _scoreValue
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1643046098951957852, guid: 99c1b9e05b20f894cb3546e306ac459a, type: 3}
       propertyPath: m_Name
       value: Block_02
@@ -1001,6 +1025,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7796036458608504407}
     m_Modifications:
+    - target: {fileID: 879950176815563552, guid: 99c1b9e05b20f894cb3546e306ac459a, type: 3}
+      propertyPath: _scoreValue
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1643046098951957852, guid: 99c1b9e05b20f894cb3546e306ac459a, type: 3}
       propertyPath: m_Name
       value: Block_02
@@ -1079,6 +1107,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7796036458608504407}
     m_Modifications:
+    - target: {fileID: 879950176815563552, guid: 99c1b9e05b20f894cb3546e306ac459a, type: 3}
+      propertyPath: _scoreValue
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1643046098951957852, guid: 99c1b9e05b20f894cb3546e306ac459a, type: 3}
       propertyPath: m_Name
       value: Block_03
@@ -1157,6 +1189,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1176142975666659757}
     m_Modifications:
+    - target: {fileID: 879950176815563552, guid: 99c1b9e05b20f894cb3546e306ac459a, type: 3}
+      propertyPath: _scoreValue
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1643046098951957852, guid: 99c1b9e05b20f894cb3546e306ac459a, type: 3}
       propertyPath: m_Name
       value: Block_07
@@ -1235,6 +1271,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1595439380380651308}
     m_Modifications:
+    - target: {fileID: 879950176815563552, guid: 99c1b9e05b20f894cb3546e306ac459a, type: 3}
+      propertyPath: _scoreValue
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1643046098951957852, guid: 99c1b9e05b20f894cb3546e306ac459a, type: 3}
       propertyPath: m_Name
       value: Block_07
@@ -1423,6 +1463,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1595439380380651308}
     m_Modifications:
+    - target: {fileID: 879950176815563552, guid: 99c1b9e05b20f894cb3546e306ac459a, type: 3}
+      propertyPath: _scoreValue
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1643046098951957852, guid: 99c1b9e05b20f894cb3546e306ac459a, type: 3}
       propertyPath: m_Name
       value: Block_04
@@ -1673,6 +1717,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3013513422768517056}
     m_Modifications:
+    - target: {fileID: 879950176815563552, guid: 99c1b9e05b20f894cb3546e306ac459a, type: 3}
+      propertyPath: _scoreValue
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1643046098951957852, guid: 99c1b9e05b20f894cb3546e306ac459a, type: 3}
       propertyPath: m_Name
       value: Block_02
@@ -1751,6 +1799,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1595439380380651308}
     m_Modifications:
+    - target: {fileID: 879950176815563552, guid: 99c1b9e05b20f894cb3546e306ac459a, type: 3}
+      propertyPath: _scoreValue
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1643046098951957852, guid: 99c1b9e05b20f894cb3546e306ac459a, type: 3}
       propertyPath: m_Name
       value: Block_05
@@ -1907,6 +1959,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7796036458608504407}
     m_Modifications:
+    - target: {fileID: 879950176815563552, guid: 99c1b9e05b20f894cb3546e306ac459a, type: 3}
+      propertyPath: _scoreValue
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1643046098951957852, guid: 99c1b9e05b20f894cb3546e306ac459a, type: 3}
       propertyPath: m_Name
       value: Block_06
@@ -1985,6 +2041,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3013513422768517056}
     m_Modifications:
+    - target: {fileID: 879950176815563552, guid: 99c1b9e05b20f894cb3546e306ac459a, type: 3}
+      propertyPath: _scoreValue
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1643046098951957852, guid: 99c1b9e05b20f894cb3546e306ac459a, type: 3}
       propertyPath: m_Name
       value: Block_07
@@ -2063,6 +2123,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1595439380380651308}
     m_Modifications:
+    - target: {fileID: 879950176815563552, guid: 99c1b9e05b20f894cb3546e306ac459a, type: 3}
+      propertyPath: _scoreValue
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1643046098951957852, guid: 99c1b9e05b20f894cb3546e306ac459a, type: 3}
       propertyPath: m_Name
       value: Block_03
@@ -2141,6 +2205,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7796036458608504407}
     m_Modifications:
+    - target: {fileID: 879950176815563552, guid: 99c1b9e05b20f894cb3546e306ac459a, type: 3}
+      propertyPath: _scoreValue
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1643046098951957852, guid: 99c1b9e05b20f894cb3546e306ac459a, type: 3}
       propertyPath: m_Name
       value: Block_04
@@ -2329,6 +2397,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1176142975666659757}
     m_Modifications:
+    - target: {fileID: 879950176815563552, guid: 99c1b9e05b20f894cb3546e306ac459a, type: 3}
+      propertyPath: _scoreValue
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1643046098951957852, guid: 99c1b9e05b20f894cb3546e306ac459a, type: 3}
       propertyPath: m_Name
       value: Block_04
@@ -2477,6 +2549,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1595439380380651308}
     m_Modifications:
+    - target: {fileID: 879950176815563552, guid: 99c1b9e05b20f894cb3546e306ac459a, type: 3}
+      propertyPath: _scoreValue
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1643046098951957852, guid: 99c1b9e05b20f894cb3546e306ac459a, type: 3}
       propertyPath: m_Name
       value: Block_06
@@ -2555,6 +2631,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3013513422768517056}
     m_Modifications:
+    - target: {fileID: 879950176815563552, guid: 99c1b9e05b20f894cb3546e306ac459a, type: 3}
+      propertyPath: _scoreValue
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1643046098951957852, guid: 99c1b9e05b20f894cb3546e306ac459a, type: 3}
       propertyPath: m_Name
       value: Block_05
@@ -2695,6 +2775,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7796036458608504407}
     m_Modifications:
+    - target: {fileID: 879950176815563552, guid: 99c1b9e05b20f894cb3546e306ac459a, type: 3}
+      propertyPath: _scoreValue
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1643046098951957852, guid: 99c1b9e05b20f894cb3546e306ac459a, type: 3}
       propertyPath: m_Name
       value: Block_07
@@ -2835,6 +2919,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1176142975666659757}
     m_Modifications:
+    - target: {fileID: 879950176815563552, guid: 99c1b9e05b20f894cb3546e306ac459a, type: 3}
+      propertyPath: _scoreValue
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1643046098951957852, guid: 99c1b9e05b20f894cb3546e306ac459a, type: 3}
       propertyPath: m_Name
       value: Block_03
@@ -2913,6 +3001,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3013513422768517056}
     m_Modifications:
+    - target: {fileID: 879950176815563552, guid: 99c1b9e05b20f894cb3546e306ac459a, type: 3}
+      propertyPath: _scoreValue
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1643046098951957852, guid: 99c1b9e05b20f894cb3546e306ac459a, type: 3}
       propertyPath: m_Name
       value: Block_04
@@ -2991,6 +3083,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3013513422768517056}
     m_Modifications:
+    - target: {fileID: 879950176815563552, guid: 99c1b9e05b20f894cb3546e306ac459a, type: 3}
+      propertyPath: _scoreValue
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1643046098951957852, guid: 99c1b9e05b20f894cb3546e306ac459a, type: 3}
       propertyPath: m_Name
       value: Block_03
