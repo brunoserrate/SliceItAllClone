@@ -41,6 +41,11 @@ namespace SerrateDevs.SliceItAllClone {
         }
 
         private void Jump(bool jumpFoward = true) {
+            if(GameStateController.Instance.CurrentGameState != GameStates.InGame) {
+                Stuck();
+                return;
+            }
+
             if(IsStuck()) {
                 UnStuck();
             }

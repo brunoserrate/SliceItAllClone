@@ -22,7 +22,8 @@ namespace SerrateDevs.SliceItAllClone {
         #region Events
         private void OnPlayerGainScore(int value) {
             _currentScore += value;
-            OnScoreChange?.Invoke(_currentScore);
+            _totalScore += value;
+            OnScoreChange?.Invoke(_totalScore);
         }
 
         private void OnPlayerWin(float scoreMultiplier) {

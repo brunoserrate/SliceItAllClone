@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Assets/97_Scenes/MVPScene.unity
     guid: 75cd239d7844cdb429500849db55bfb0
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 56b8628b20c6cee43822bb3b34381e28, type: 2}
+    com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: 017a82b57fe80e34aab27d8ce8fa20b2, type: 2}
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 47f142a476097a74497ff0da5d3d6767, type: 2}

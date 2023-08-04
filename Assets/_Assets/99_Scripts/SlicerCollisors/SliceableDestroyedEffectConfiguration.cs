@@ -7,5 +7,6 @@ namespace SerrateDevs.SliceItAllClone {
     )]
     public class SliceableDestroyedEffectConfiguration : ScriptableObject {
         public float explosionForce = 100f;
+        public Vector3 explosionDirection = Vector3.up;
     }
 }

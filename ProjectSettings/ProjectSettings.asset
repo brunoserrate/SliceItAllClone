@@ -135,7 +135,9 @@ PlayerSettings:
     16:9: 1
     Others: 1
   bundleVersion: mvp_0.1.0
-  preloadedAssets: []
+  preloadedAssets:
+  - {fileID: 1124127605930214499, guid: 56b8628b20c6cee43822bb3b34381e28, type: 2}
+  - {fileID: 11400000, guid: 017a82b57fe80e34aab27d8ce8fa20b2, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -156,6 +158,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.SerrateDevs.SliceItAllClone
+    Standalone: com.SerrateDevs.SliceItAllClone
   buildNumber:
     Bratwurst: 0
     Standalone: 0

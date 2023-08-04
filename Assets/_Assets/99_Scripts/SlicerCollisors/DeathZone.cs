@@ -6,10 +6,14 @@ namespace SerrateDevs.SliceItAllClone {
 
         public static Action OnPlayerLose;
         public void OnSlicerHandleHit(PlayerController playerController) {
+            if(GameStateController.Instance.CurrentGameState != GameStates.InGame) return;
+
             PlayerLose(playerController);
         }
 
         public void OnSlicerSharpEdgeHit(PlayerController playerController) {
+            if(GameStateController.Instance.CurrentGameState != GameStates.InGame) return;
+
             PlayerLose(playerController);
         }
 

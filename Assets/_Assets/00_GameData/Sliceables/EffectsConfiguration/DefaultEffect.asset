@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c40ccb48dc9fea848a2e2cde2cf9ccfe, type: 3}
   m_Name: DefaultEffect
   m_EditorClassIdentifier: 
-  explosionForce: 100
+  explosionForce: 15
+  explosionDirection: {x: 0, y: 0.5, z: 0.5}

@@ -32,10 +32,23 @@ namespace SerrateDevs.SliceItAllClone {
         }
 
         private void Slice(){
+            for (int i = 0; i < _rigidbodiesParts.Length; i++) {
+                _rigidbodiesParts[i].isKinematic = false;
+                Vector3 explosionDirection = _sliceableDestroyedEffectConfiguration.explosionDirection;
+
+                if(i > 0){
+                    explosionDirection.z *= -2;
+                }
+
+                _rigidbodiesParts[i].AddForce(
+                    _sliceableDestroyedEffectConfiguration.explosionForce * explosionDirection,
+                    ForceMode.Impulse
+                );
+            }
             foreach (var rbPart in _rigidbodiesParts) {
                 rbPart.isKinematic = false;
                 rbPart.AddForce(
-                     _sliceableDestroyedEffectConfiguration.explosionForce * Vector3.up,
+                    _sliceableDestroyedEffectConfiguration.explosionForce * _sliceableDestroyedEffectConfiguration.explosionDirection,
                     ForceMode.Impulse
                 );
 

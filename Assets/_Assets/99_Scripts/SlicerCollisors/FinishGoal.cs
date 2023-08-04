@@ -12,6 +12,8 @@ namespace SerrateDevs.SliceItAllClone {
         }
 
         public void OnSlicerSharpEdgeHit(PlayerController playerController) {
+            if(GameStateController.Instance.CurrentGameState != GameStates.InGame) return;
+
             PlayerWin(playerController);
         }
 
