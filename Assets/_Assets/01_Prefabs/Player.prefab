@@ -42,6 +42,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4336306078115902347}
   - component: {fileID: 4410507704132727819}
+  - component: {fileID: 579640429040455717}
   - component: {fileID: 859506857667588193}
   m_Layer: 0
   m_Name: Player
@@ -83,6 +84,18 @@ MonoBehaviour:
   _backForceDirection: {x: -0.9, y: 5, z: 0}
   _frontRotationForce: {x: 0, y: 0, z: -250}
   _backRotationForce: {x: 0, y: 0, z: -200}
+--- !u!114 &579640429040455717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7903007016198420088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48beea98bb4f72f41a66ce042c5f2bb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!54 &859506857667588193
 Rigidbody:
   m_ObjectHideFlags: 0

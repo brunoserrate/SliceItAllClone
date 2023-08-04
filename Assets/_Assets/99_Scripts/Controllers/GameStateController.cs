@@ -23,14 +23,14 @@ namespace SerrateDevs.SliceItAllClone {
 
         #region EnableDisable
         private void OnEnable() {
-            PlayerController.OnTap += OnPlayerTap;
+            InputReader.OnTap += OnPlayerTap;
             DeathZone.OnPlayerLose += OnPlayerLose;
             FinishGoal.OnPlayerWin += OnPlayerWin;
             LevelController.OnLevelLoaded += ResetState;
         }
 
         private void OnDisable() {
-            PlayerController.OnTap -= OnPlayerTap;
+            InputReader.OnTap -= OnPlayerTap;
             DeathZone.OnPlayerLose -= OnPlayerLose;
             FinishGoal.OnPlayerWin -= OnPlayerWin;
             LevelController.OnLevelLoaded -= ResetState;
